@@ -1,0 +1,13 @@
+{
+  "name": "tp3-frontend-ifts29",
+  "private": true,
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace app",
+    "build": "npm run build --workspace app",
+    "lint": "npm run lint --workspace app",
+    "preview": "npm run preview --workspace app"
+  }
+}
