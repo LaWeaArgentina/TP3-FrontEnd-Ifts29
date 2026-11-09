@@ -896,6 +896,44 @@ a:focus-visible {
   }
 }
 
+@media (max-width: 400px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+    padding: 10px 0;
+  }
+
+  .site-header nav {
+    gap: 9px;
+  }
+
+  .site-header nav a {
+    font-size: 0.7rem;
+  }
+
+  .header-tag {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+
+  .hero-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(1.8rem, 10vw, 2.5rem);
+  }
+
+  .assignment-card h2 {
+    overflow-wrap: anywhere;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
